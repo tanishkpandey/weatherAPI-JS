@@ -1,0 +1,113 @@
+/* Add this CSS rule to hide the image when there is no source */
+#weather_icon[src=""] {
+  display: none;
+}
+
+/* styles.css */
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0e0d0d;
+}
+
+.weather-card {
+  background-color: #252525;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 370px;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #0E0D0D;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-left: 1rem;
+  font-size: 16px;
+}
+
+.search-bar button:hover {
+  background-color: #444;
+}
+
+.weather-info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+#location {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#current_temp {
+  font-size: 2.5rem;
+  margin-top: -0.5rem;
+  font-weight: bold;
+}
+
+#description {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details img{
+  width: 50px;
+}
+
+.details p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.details span {
+  font-weight: bold;
+}
+
+#weather_icon {
+  display: block;
+  margin: 0 auto; 
+  width: 50px; 
+  height: 50px; 
+}
+
+#weather_icon[src=""] {
+  display: none; 
+}

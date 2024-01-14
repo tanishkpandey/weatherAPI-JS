@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather Forecast</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="weather-card">
+    <div class="search-bar">
+      <input type="text" placeholder="Enter city name..." id="city_name">
+      <button type="button" onclick="checkweather()">GO</button>
+    </div>
+    <div class="weather-info">
+      <h2 id="location">Enter Location...</h2>
+      <img id="weather_icon" src="" alt="___">
+      <p id="current_temp"></p>
+      <p id="description"></p>
+      <div class="details">
+        <div class="detail">
+            <img src="./images/humidity.png" alt="Humidity">
+            <p>Humidity: <span id="humidity">___</span>%</p>
+        </div>
+        <div class="detail">
+            <img src="./images/wind.png" alt="Windspeed">
+            <p>Wind Speed: <span id="wind_speed">___</span> km/h</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <script src="action.js"></script>
+</body>
+</html>
